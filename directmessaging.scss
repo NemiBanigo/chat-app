@@ -64,17 +64,28 @@ span{
         padding-right: 15px;
     }      
     }
+    .chat-section{ 
+     padding-left: 15px;
+    margin-top: 15px;
+    display:flex;
+    flex-direction: column;
+    
+    
     .chats{
      display:inline-block;
-     height: 50px;
+     height: 25px;
      width: 150px;
-     padding:5px;
+     padding:7px;
      background: linear-gradient(to right, #F5F5F5, #7B7B7B);
      border-radius: 10px;
      position: relative;
-     margin: 10px, 8px;
+     margin-bottom: 20px;
+     &.sent{
+         border-radius: 10px;
+     }
      .messages{
       font-size: 10.5px;
+    
 
 
      }
@@ -82,15 +93,18 @@ span{
      .chat-popup{
       width: 0;
      height: 0;
-     border-left: 10px solid transparent;
+     border-left: 0px solid transparent;
      border-right: 10px solid transparent;
-     border-bottom: 20px solid #E0E0E0;
+     border-bottom: 30px solid #E0E0E0;
      position: absolute; 
      bottom: -14px;
-     left: 16px;
+     left: 20px;
      transform: rotate(69deg);
      }
     }
+
+}
+
 }
 
 

@@ -54,27 +54,34 @@ span {
       height: 60px;
       align-items: center;
       padding-right: 15px; }
-  .box .chats {
-    display: inline-block;
-    height: 50px;
-    width: 150px;
-    padding: 5px;
-    background: linear-gradient(to right, #F5F5F5, #7B7B7B);
-    border-radius: 10px;
-    position: relative;
-    margin: 10px, 8px; }
-    .box .chats .messages {
-      font-size: 10.5px; }
-    .box .chats .chat-popup {
-      width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 20px solid #E0E0E0;
-      position: absolute;
-      bottom: -14px;
-      left: 16px;
-      transform: rotate(69deg); }
+  .box .chat-section {
+    padding-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column; }
+    .box .chat-section .chats {
+      display: inline-block;
+      height: 25px;
+      width: 150px;
+      padding: 7px;
+      background: linear-gradient(to right, #F5F5F5, #7B7B7B);
+      border-radius: 10px;
+      position: relative;
+      margin-bottom: 20px; }
+      .box .chat-section .chats.sent {
+        border-radius: 10px; }
+      .box .chat-section .chats .messages {
+        font-size: 10.5px; }
+      .box .chat-section .chats .chat-popup {
+        width: 0;
+        height: 0;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 30px solid #E0E0E0;
+        position: absolute;
+        bottom: -14px;
+        left: 20px;
+        transform: rotate(69deg); }
 
 /*# sourceMappingURL=directmessaging.css.map */
 
