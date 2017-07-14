@@ -17,6 +17,9 @@ span {
     padding-top: 10px;
     border-bottom: 1px solid #2c3d50;
     justify-content: space-between; }
+    .box .profile .profile-name {
+      color: #fff;
+      text-align: center; }
     .box .profile .stat-info {
       display: inline-flex;
       height: 60px;
@@ -35,15 +38,20 @@ span {
       justify-content: center;
       align-items: center;
       font-size: 14px; }
-    .box .profile .profile-image {
-      display: inline-block;
-      border-radius: 100%;
-      overflow: hidden;
-      height: 45px;
-      width: 45px; }
-      .box .profile .profile-image .image {
-        height: 50px;
+    .box .profile .top {
+      text-align: center; }
+      .box .profile .top .profile-image {
+        display: inline-block;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 45px;
         text-align: center; }
+        .box .profile .top .profile-image .image {
+          height: 50px;
+          text-align: center; }
+      .box .profile .top .video-corners {
+        height: 35px;
+        overflow: hidden; }
 
 /*# sourceMappingURL=directmessaging.css.map */
 

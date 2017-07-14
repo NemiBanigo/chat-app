@@ -6,21 +6,22 @@ body{
 } 
 span{
     display:inline-block;
-}
-
-// .chatbox{
-	
-// }         
+}       
 .box{
  margin: 0 auto;
  width: 414px;
  height: 736px;
  background-color: #101F31;
+
  .profile{
      display: flex;
      padding-top: 10px;
      border-bottom: 1px solid #2c3d50;
      justify-content: space-between;
+     .profile-name{
+        color: #fff;
+        text-align: center;
+    }
      .stat-info{
       display: inline-flex;
       height: 60px;
@@ -32,32 +33,38 @@ span{
       height: 30px;
     }
     .number{
-     margin: 0;
-     display: inline-flex;
-     border-radius: 100%;
-     background: #fff;
-     width: 25px;
-     height: 25px;
-     justify-content: center;
-     align-items: center;
-     font-size: 14px;
+        margin: 0;
+        display: inline-flex;
+        border-radius: 100%;
+        background: #fff;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
     }
-    .profile-image{
-     display: inline-block;
-     border-radius: 100%;
-     overflow: hidden;
-     height: 45px;
-     width: 45px;
-     .image{
-      height: 50px;
-      text-align: center;
-     }
+    .top{  
+     text-align: center;
+      .profile-image{
+        display: inline-block;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 45px;
+        text-align: center;
+            .image{
+                height: 50px;
+                text-align: center;
+            }    
+        }
+    .video-corners{
+        height:35px;
+        overflow:hidden;
+    }   
     }
-    }
+
+ }
 
 }
-
- 
 
 
 
