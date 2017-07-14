@@ -4,11 +4,46 @@ body {
   background-image: url("images/directmessaging-bgx.png");
   background-size: contain; }
 
+span {
+  display: inline-block; }
+
 .box {
   margin: 0 auto;
   width: 414px;
   height: 736px;
   background-color: #101F31; }
+  .box .profile {
+    display: flex;
+    padding-top: 10px;
+    border-bottom: 1px solid #2c3d50;
+    justify-content: space-between; }
+    .box .profile .stat-info {
+      display: inline-flex;
+      height: 60px;
+      align-items: center;
+      padding-left: 15px; }
+    .box .profile .back-arrow {
+      margin-right: 5px;
+      height: 30px; }
+    .box .profile .number {
+      margin: 0;
+      display: inline-flex;
+      border-radius: 100%;
+      background: #fff;
+      width: 25px;
+      height: 25px;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px; }
+    .box .profile .profile-image {
+      display: inline-block;
+      border-radius: 100%;
+      overflow: hidden;
+      height: 45px;
+      width: 45px; }
+      .box .profile .profile-image .image {
+        height: 50px;
+        text-align: center; }
 
 /*# sourceMappingURL=directmessaging.css.map */
 
