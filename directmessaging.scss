@@ -56,15 +56,26 @@ span{
                 text-align: center;
             }    
         }
-    .video-corners{
-        height:35px;
-        overflow:hidden;
-    }   
+    } 
+    .video{
+        display: inline-flex;
+        height: 60px;
+        align-items: center;
+        padding-right: 15px;
+    }      
     }
-
- }
-
+    .chats{
+     display:inline-block;
+     height: 80px;
+     width: 100px;
+     background-color: #c00c00;
+     border-top-right-radius: 30px;
+     border-bottom-right-radius: 30px;
+     border-top-left-radius: 30px;
+    }
 }
+
+
 
 
 

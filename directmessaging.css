@@ -49,9 +49,19 @@ span {
         .box .profile .top .profile-image .image {
           height: 50px;
           text-align: center; }
-      .box .profile .top .video-corners {
-        height: 35px;
-        overflow: hidden; }
+    .box .profile .video {
+      display: inline-flex;
+      height: 60px;
+      align-items: center;
+      padding-right: 15px; }
+  .box .chats {
+    display: inline-block;
+    height: 80px;
+    width: 100px;
+    background-color: #c00c00;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px; }
 
 /*# sourceMappingURL=directmessaging.css.map */
 
