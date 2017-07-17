@@ -70,6 +70,10 @@ span {
       margin-bottom: 20px; }
       .box .chat-section .chats.sent {
         border-radius: 10px; }
+      .box .chat-section .chats.received {
+        border-radius: 10px;
+        height: 33px;
+        background: linear-gradient(to right, #30FA85, #30FA5F); }
       .box .chat-section .chats .messages {
         font-size: 10.5px; }
       .box .chat-section .chats .chat-popup {
@@ -81,7 +85,8 @@ span {
         position: absolute;
         bottom: -14px;
         left: 20px;
-        transform: rotate(69deg); }
+        transform: rotate(69deg);
+        background: linear-gradient(to right, #30FA85, #30FA5F); }
 
 /*# sourceMappingURL=directmessaging.css.map */
 

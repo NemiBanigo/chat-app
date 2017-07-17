@@ -66,9 +66,10 @@ span{
     }
     .chat-section{ 
      padding-left: 15px;
-    margin-top: 15px;
-    display:flex;
-    flex-direction: column;
+     margin-top: 15px;
+     display:flex;
+     flex-direction: column;
+     
     
     
     .chats{
@@ -82,6 +83,12 @@ span{
      margin-bottom: 20px;
      &.sent{
          border-radius: 10px;
+         
+     }
+     &.received {
+         border-radius: 10px;
+         height: 33px;
+         background: linear-gradient(to right, #30FA85, #30FA5F);
      }
      .messages{
       font-size: 10.5px;
@@ -100,6 +107,7 @@ span{
      bottom: -14px;
      left: 20px;
      transform: rotate(69deg);
+     background: linear-gradient(to right, #30FA85, #30FA5F);
      }
     }
 
