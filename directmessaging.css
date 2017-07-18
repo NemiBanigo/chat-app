@@ -10,7 +10,6 @@ span {
 .box {
   margin: 0 auto;
   width: 414px;
-  height: 736px;
   background-color: #101F31; }
   .box .profile {
     display: flex;
@@ -115,6 +114,10 @@ span {
         left: 124px;
         transform: rotate(180deg);
         content: ' '; }
+  .box .send-message {
+    display: flex; }
+    .box .send-message img {
+      height: 30px; }
 
 /*# sourceMappingURL=directmessaging.css.map */
 
