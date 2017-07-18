@@ -89,7 +89,14 @@ span{
          border-radius: 10px;
          height: 33px;
          background: linear-gradient(to right, #30FA85, #30FA5F);
+         
+         align-items: flex-end;
      }
+        &.mags{
+         border-radius: 10px;
+         height: 33px;
+         background: linear-gradient(to right, #30FA85, #30FA5F);
+        }
      .messages{
       font-size: 10.5px;
     
@@ -107,13 +114,36 @@ span{
      bottom: -14px;
      left: 20px;
      transform: rotate(69deg);
-     background: linear-gradient(to right, #30FA85, #30FA5F);
+    
+        
      }
+    .writing-chats{
+         width: 0;
+     height: 0;
+     border-left: 4px solid transparent;
+     border-right: 11px solid transparent;
+     border-bottom: 16px solid #30FA5F;
+     position: absolute; 
+     bottom: -12px;
+     left: 138px;
+     transform: rotate(180deg);
     }
+     }
+     }
+    .received-messages{
+     padding-left: 15px;
+     margin-top: 15px;
+     display:flex;
+     flex-direction: column;
+     align-items: flex-end;
 
-}
+    }
+    }
+ 
 
-}
+
+
+
 
 
 
