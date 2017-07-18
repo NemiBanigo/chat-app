@@ -69,9 +69,11 @@ span {
       margin-bottom: 20px; }
       .box .chat-section .chats.sent {
         border-radius: 10px; }
+        .box .chat-section .chats.sent:after {
+          display: none; }
       .box .chat-section .chats .messages {
         font-size: 10.5px; }
-      .box .chat-section .chats .chat-popup {
+      .box .chat-section .chats:after {
         width: 0;
         height: 0;
         border-left: 0px solid transparent;
@@ -80,7 +82,8 @@ span {
         position: absolute;
         bottom: -14px;
         left: 20px;
-        transform: rotate(69deg); }
+        transform: rotate(69deg);
+        content: ' '; }
   .box .received-chats {
     padding-right: 15px;
     margin-top: 15px;
@@ -97,9 +100,11 @@ span {
       margin-bottom: 20px; }
       .box .received-chats .message-chats.received {
         border-radius: 10px; }
+        .box .received-chats .message-chats.received:after {
+          display: none; }
       .box .received-chats .message-chats .messages {
         font-size: 10.5px; }
-      .box .received-chats .message-chats .chat-popup {
+      .box .received-chats .message-chats:after {
         width: 0;
         height: 0;
         border-left: 18px solid transparent;
@@ -108,7 +113,8 @@ span {
         position: absolute;
         bottom: -12px;
         left: 124px;
-        transform: rotate(180deg); }
+        transform: rotate(180deg);
+        content: ' '; }
 
 /*# sourceMappingURL=directmessaging.css.map */
 

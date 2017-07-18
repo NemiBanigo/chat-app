@@ -82,6 +82,9 @@ span{
      margin-bottom: 20px;
      &.sent{
          border-radius: 10px;
+         &:after{
+             display: none;
+         }
          
      }
     //  &.received {
@@ -98,7 +101,7 @@ span{
      .messages{
       font-size: 10.5px;
      }
-     .chat-popup{
+     &:after{
       width: 0;
      height: 0;
      border-left: 0px solid transparent;
@@ -108,7 +111,7 @@ span{
      bottom: -14px;
      left: 20px;
      transform: rotate(69deg);
-    
+     content: ' ';
         
      }
      
@@ -141,14 +144,17 @@ span{
         position: relative;
         margin-bottom: 20px;
         &.received{
-            border-radius: 10px;
-            
-        }
+            border-radius: 10px; 
+              &:after{
+            display: none; 
+        }  
+        }  
+      
 
         .messages{
       font-size: 10.5px;
      }
-     .chat-popup{
+     &:after{
       width: 0;
      height: 0;
      border-left: 18px solid transparent;
@@ -158,6 +164,7 @@ span{
      bottom: -12px;
      left: 124px;
      transform: rotate(180deg);
+     content: ' ';
      
     
         
