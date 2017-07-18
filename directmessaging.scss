@@ -8,114 +8,103 @@ span{
     display:inline-block;
 }       
 .box{
- margin: 0 auto;
- width: 414px;
- background-color: #101F31;
+    margin: 0 auto;
+    width: 414px;
+    background-color: #101F31;
 
- .profile{
-     display: flex;
-     padding-top: 10px;
-     border-bottom: 1px solid #2c3d50;
-     justify-content: space-between;
-     .profile-name{
-        color: #fff;
-        text-align: center;
-    }
-     .stat-info{
-      display: inline-flex;
-      height: 60px;
-      align-items: center;
-      padding-left: 15px;
-     }
-    .back-arrow{
-      margin-right: 5px;
-      height: 30px;
-    }
-    .number{
-        margin: 0;
-        display: inline-flex;
-        border-radius: 100%;
-        background: #fff;
-        width: 25px;
-        height: 25px;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-    }
-    .top{  
-     text-align: center;
-      .profile-image{
-        display: inline-block;
-        border-radius: 100%;
-        overflow: hidden;
-        height: 45px;
-        text-align: center;
-            .image{
-                height: 50px;
-                text-align: center;
-            }    
+    .profile{
+        display: flex;
+        padding-top: 10px;
+        border-bottom: 1px solid #2c3d50;
+        justify-content: space-between;
+        .profile-name{
+            color: #fff;
+            text-align: center;
         }
-    } 
-    .video{
-        display: inline-flex;
-        height: 60px;
-        align-items: center;
-        padding-right: 15px;
-    }      
+        .stat-info{
+            display: inline-flex;
+            height: 60px;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .back-arrow{
+            margin-right: 5px;
+            height: 30px;
+        }
+        .number{
+            margin: 0;
+            display: inline-flex;
+            border-radius: 100%;
+            background: #fff;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+        .top{  
+            text-align: center;
+            .profile-image{
+                display: inline-block;
+                border-radius: 100%;
+                overflow: hidden;
+                height: 45px;
+                text-align: center;
+                    .image{
+                        height: 50px;
+                        text-align: center;
+                    }    
+                }
+            } 
+            .video{
+                display: inline-flex;
+                height: 60px;
+                align-items: center;
+                padding-right: 15px;
+            }
+        }
+    }
+    .second-section{
+        height: 400px;
+        overflow: scroll;
     }
     .chat-section{ 
      padding-left: 15px;
      margin-top: 15px;
      display:flex;
      flex-direction: column;
-     
-    
-    
-    .chats{
-     display:inline-block;
-     width: 150px;
-     padding:7px;
-     background: linear-gradient(to right, #F5F5F5, #7B7B7B);
-     border-radius: 10px;
-     position: relative;
-     margin-bottom: 20px;
-     &.sent{
-         border-radius: 10px;
-         &:after{
-             display: none;
-         }
-         
-     }
-    //  &.received {
-    //      border-radius: 10px;
-    //      height: 33px;
-    //      background: linear-gradient(to right, #30FA85, #30FA5F);
-         
-    //  }
-    //  &.mags{
-    //    border-radius: 10px;
-    //    height: 33px;
-    //    background: linear-gradient(to right, #30FA85, #30FA5F);
-    //     }
-     .messages{
-      font-size: 10.5px;
-     }
-     &:after{
-      width: 0;
-     height: 0;
-     border-left: 0px solid transparent;
-     border-right: 10px solid transparent;
-     border-bottom: 30px solid #E0E0E0;
-     position: absolute; 
-     bottom: -14px;
-     left: 20px;
-     transform: rotate(69deg);
-     content: ' ';
-        
-     }
-     
-    
-     }
+       
+        .chats{
+            display:inline-block;
+            width: 150px;
+            padding:7px;
+            background: linear-gradient(to right, #F5F5F5, #7B7B7B);
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 20px;
+            &.sent{
+                border-radius: 10px;
+                &:after{
+                    display: none;
+                }
+                
+            }
+            .messages{
+            font-size: 10.5px;
+            }
+            &:after{
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 30px solid #E0E0E0;
+            position: absolute; 
+            bottom: -14px;
+            left: 20px;
+            transform: rotate(69deg);
+            content: ' ';           
+            }   
+        }
      }
     .received-chats{
      padding-right: 15px;
@@ -161,24 +150,18 @@ span{
 
     }
 
-    }
-    .send-message{
+}
+ 
+ .send-message{
         img{
             height: 30px;
         }
-     display: flex;
+        display: flex;
+        justify-content: space-around;
+        input{
+            width: 50%;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #30FA5F;
+        }
     }
-
-    
-    }
- 
-
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=directmessaging.css.map */

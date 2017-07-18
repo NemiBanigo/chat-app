@@ -53,72 +53,83 @@ span {
       height: 60px;
       align-items: center;
       padding-right: 15px; }
-  .box .chat-section {
-    padding-left: 15px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column; }
-    .box .chat-section .chats {
-      display: inline-block;
-      width: 150px;
-      padding: 7px;
-      background: linear-gradient(to right, #F5F5F5, #7B7B7B);
-      border-radius: 10px;
-      position: relative;
-      margin-bottom: 20px; }
-      .box .chat-section .chats.sent {
-        border-radius: 10px; }
-        .box .chat-section .chats.sent:after {
-          display: none; }
-      .box .chat-section .chats .messages {
-        font-size: 10.5px; }
-      .box .chat-section .chats:after {
-        width: 0;
-        height: 0;
-        border-left: 0px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 30px solid #E0E0E0;
-        position: absolute;
-        bottom: -14px;
-        left: 20px;
-        transform: rotate(69deg);
-        content: ' '; }
-  .box .received-chats {
-    padding-right: 15px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
-    .box .received-chats .message-chats {
-      display: inline-block;
-      width: 150px;
-      padding: 7px;
-      background: linear-gradient(to right, #30FA85, #30FA5F);
-      border-radius: 10px;
-      position: relative;
-      margin-bottom: 20px; }
-      .box .received-chats .message-chats.received {
-        border-radius: 10px; }
-        .box .received-chats .message-chats.received:after {
-          display: none; }
-      .box .received-chats .message-chats .messages {
-        font-size: 10.5px; }
-      .box .received-chats .message-chats:after {
-        width: 0;
-        height: 0;
-        border-left: 18px solid transparent;
-        border-right: 18px solid transparent;
-        border-bottom: 30px solid #30FA5F;
-        position: absolute;
-        bottom: -12px;
-        left: 124px;
-        transform: rotate(180deg);
-        content: ' '; }
-  .box .send-message {
-    display: flex; }
-    .box .send-message img {
-      height: 30px; }
 
-/*# sourceMappingURL=directmessaging.css.map */
+.second-section {
+  height: 400px;
+  overflow: scroll; }
+
+.chat-section {
+  padding-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column; }
+  .chat-section .chats {
+    display: inline-block;
+    width: 150px;
+    padding: 7px;
+    background: linear-gradient(to right, #F5F5F5, #7B7B7B);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px; }
+    .chat-section .chats.sent {
+      border-radius: 10px; }
+      .chat-section .chats.sent:after {
+        display: none; }
+    .chat-section .chats .messages {
+      font-size: 10.5px; }
+    .chat-section .chats:after {
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 30px solid #E0E0E0;
+      position: absolute;
+      bottom: -14px;
+      left: 20px;
+      transform: rotate(69deg);
+      content: ' '; }
+
+.received-chats {
+  padding-right: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .received-chats .message-chats {
+    display: inline-block;
+    width: 150px;
+    padding: 7px;
+    background: linear-gradient(to right, #30FA85, #30FA5F);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px; }
+    .received-chats .message-chats.received {
+      border-radius: 10px; }
+      .received-chats .message-chats.received:after {
+        display: none; }
+    .received-chats .message-chats .messages {
+      font-size: 10.5px; }
+    .received-chats .message-chats:after {
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 30px solid #30FA5F;
+      position: absolute;
+      bottom: -12px;
+      left: 124px;
+      transform: rotate(180deg);
+      content: ' '; }
+
+.send-message {
+  display: flex;
+  justify-content: space-around; }
+  .send-message img {
+    height: 30px; }
+  .send-message input {
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #30FA5F; }
 
 /*# sourceMappingURL=directmessaging.css.map */
