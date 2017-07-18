@@ -74,7 +74,6 @@ span{
     
     .chats{
      display:inline-block;
-     height: 25px;
      width: 150px;
      padding:7px;
      background: linear-gradient(to right, #F5F5F5, #7B7B7B);
@@ -85,25 +84,20 @@ span{
          border-radius: 10px;
          
      }
-     &.received {
-         border-radius: 10px;
-         height: 33px;
-         background: linear-gradient(to right, #30FA85, #30FA5F);
+    //  &.received {
+    //      border-radius: 10px;
+    //      height: 33px;
+    //      background: linear-gradient(to right, #30FA85, #30FA5F);
          
-         align-items: flex-end;
-     }
-        &.mags{
-         border-radius: 10px;
-         height: 33px;
-         background: linear-gradient(to right, #30FA85, #30FA5F);
-        }
+    //  }
+    //  &.mags{
+    //    border-radius: 10px;
+    //    height: 33px;
+    //    background: linear-gradient(to right, #30FA85, #30FA5F);
+    //     }
      .messages{
       font-size: 10.5px;
-    
-
-
      }
-
      .chat-popup{
       width: 0;
      height: 0;
@@ -117,27 +111,62 @@ span{
     
         
      }
-    .writing-chats{
-         width: 0;
-     height: 0;
-     border-left: 4px solid transparent;
-     border-right: 11px solid transparent;
-     border-bottom: 16px solid #30FA5F;
-     position: absolute; 
-     bottom: -12px;
-     left: 138px;
-     transform: rotate(180deg);
-    }
+     
+    // .writing-chats{
+    //  width: 0;
+    //  height: 0;
+    //  border-left: 4px solid transparent;
+    //  border-right: 11px solid transparent;
+    //  border-bottom: 16px solid #30FA5F;
+    //  position: absolute; 
+    //  bottom: -12px;
+    //  left: 138px;
+    //  transform: rotate(180deg);
+    // }
      }
      }
-    .received-messages{
-     padding-left: 15px;
+    .received-chats{
+     padding-right: 15px;
      margin-top: 15px;
      display:flex;
      flex-direction: column;
      align-items: flex-end;
 
+     .message-chats{
+        display:inline-block;
+        width: 150px;
+        padding:7px;
+        background: linear-gradient(to right,#30FA85,#30FA5F);
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 20px;
+        &.received{
+            border-radius: 10px;
+            
+        }
+
+        .messages{
+      font-size: 10.5px;
+     }
+     .chat-popup{
+      width: 0;
+     height: 0;
+     border-left: 18px solid transparent;
+     border-right: 18px solid transparent;
+     border-bottom: 30px solid #30FA5F;
+     position: absolute; 
+     bottom: -12px;
+     left: 124px;
+     transform: rotate(180deg);
+     
+    
+        
+     }
+
     }
+
+    }
+    
     }
  
 

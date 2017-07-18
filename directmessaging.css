@@ -61,7 +61,6 @@ span {
     flex-direction: column; }
     .box .chat-section .chats {
       display: inline-block;
-      height: 25px;
       width: 150px;
       padding: 7px;
       background: linear-gradient(to right, #F5F5F5, #7B7B7B);
@@ -70,15 +69,6 @@ span {
       margin-bottom: 20px; }
       .box .chat-section .chats.sent {
         border-radius: 10px; }
-      .box .chat-section .chats.received {
-        border-radius: 10px;
-        height: 33px;
-        background: linear-gradient(to right, #30FA85, #30FA5F);
-        align-items: flex-end; }
-      .box .chat-section .chats.mags {
-        border-radius: 10px;
-        height: 33px;
-        background: linear-gradient(to right, #30FA85, #30FA5F); }
       .box .chat-section .chats .messages {
         font-size: 10.5px; }
       .box .chat-section .chats .chat-popup {
@@ -91,22 +81,34 @@ span {
         bottom: -14px;
         left: 20px;
         transform: rotate(69deg); }
-      .box .chat-section .chats .writing-chats {
-        width: 0;
-        height: 0;
-        border-left: 4px solid transparent;
-        border-right: 11px solid transparent;
-        border-bottom: 16px solid #30FA5F;
-        position: absolute;
-        bottom: -12px;
-        left: 138px;
-        transform: rotate(180deg); }
-  .box .received-messages {
-    padding-left: 15px;
+  .box .received-chats {
+    padding-right: 15px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-end; }
+    .box .received-chats .message-chats {
+      display: inline-block;
+      width: 150px;
+      padding: 7px;
+      background: linear-gradient(to right, #30FA85, #30FA5F);
+      border-radius: 10px;
+      position: relative;
+      margin-bottom: 20px; }
+      .box .received-chats .message-chats.received {
+        border-radius: 10px; }
+      .box .received-chats .message-chats .messages {
+        font-size: 10.5px; }
+      .box .received-chats .message-chats .chat-popup {
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-bottom: 30px solid #30FA5F;
+        position: absolute;
+        bottom: -12px;
+        left: 124px;
+        transform: rotate(180deg); }
 
 /*# sourceMappingURL=directmessaging.css.map */
 
